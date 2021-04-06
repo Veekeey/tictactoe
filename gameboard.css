@@ -1,0 +1,20 @@
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-left: 15rem;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  padding: 1rem 1rem 1rem .5rem;
+  background-color:#2A5598;
+  color: #fff;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
