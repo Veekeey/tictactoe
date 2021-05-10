@@ -6,7 +6,7 @@ let restart = document.querySelector(".restart");
 
 let gameActive = true;
 let currentPlayer = "X";
-let gameState = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
+let gameState = ["", "", "", "", "", "", "", "", ""];
 
 
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
@@ -72,6 +72,8 @@ function resultValidation(){
             break;
           }
 
+
+
     }
 
     if (roundWon) {
@@ -86,6 +88,8 @@ function resultValidation(){
         gameActive = false;
         return;
     }
+
+    handlePlayerChange();
            
 
 }
@@ -100,6 +104,9 @@ function resultValidation(){
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
+    
+    let block = document.querySelectorAll(".block");
+
     block.forEach(block => block.innerHTML = " ");
   }
 

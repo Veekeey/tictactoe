@@ -20,17 +20,6 @@ body {
   font-size: 60px;
 }
 
-/* .players {
-  display: flex;
-  transform: translate(40%, 100%);
-  margin-top: 5rem;
-} */
-
-/* .players button {
-  margin-left: 2rem;
-  width: 100px;
-  height: 30px;
-} */
 
 .status-display{
   transform: translate(40%, 100%);
